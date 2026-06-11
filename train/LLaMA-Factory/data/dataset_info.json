@@ -1,0 +1,30 @@
+{
+  "sft_planner": {
+    "file_name": "ROOT/data/InterleaveThinker/Train-Data/planner_sft.json", 
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "sft_critic": {
+    "file_name": "ROOT/data/InterleaveThinker/Train-Data/critic_sft.json", 
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+torchrun --nproc_per_node=8 klein_data.py

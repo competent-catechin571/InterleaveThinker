@@ -1,0 +1,1 @@
+bash train/LLaMA-Factory/local_scripts/sft_critic.sh
