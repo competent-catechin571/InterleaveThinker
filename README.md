@@ -1,7 +1,6 @@
 
 <h1 align="left">
-  <img src="assets/logo.png" height="55" style="vertical-align: middle; margin-right: 10px;">
-  InterleaveThinker: Reinforcing Agentic Interleaved Generation
+  <img src="assets/logo.png" height="55" align="absmiddle"> InterleaveThinker: Reinforcing Agentic Interleaved Generation
 </h1>
 
 Official repository for the paper "[InterleaveThinker: Reinforcing Agentic Interleaved Generation]()".
