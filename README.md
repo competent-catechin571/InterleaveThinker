@@ -254,7 +254,7 @@ For the details, please refer to [UEval](https://github.com/zlab-princeton/UEval
 
 ### 📊 Interleaved Data Construction Pipeline
 
-We provide our raw data construction pipeline and how to use the data to construct interleaved sequence for UMM training. Please refer to [DATA](https://github.com/zhengdian1/meituan/tree/main/InterleaveThinker/data_gen/README.md)
+We provide our raw data construction pipeline and how to use the data to construct interleaved sequence for UMM training. Please refer to [DATA](https://github.com/zhengdian1/InterleaveThinker/blob/main/data_gen/README.md)
 
 ## Acknowledgements
 
